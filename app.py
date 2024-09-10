@@ -9,10 +9,10 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, LSTM
 import matplotlib.pyplot as plt
 
-# Title of the application
+# Title of the Streamlit application
 st.title("Basic Stock Price Prediction with LSTM")
 
-# Sidebar inputs
+# Streamlit Sidebar inputs
 ticker = st.sidebar.text_input("Enter Stock Ticker", value="AAPL", max_chars=5)
 start_date = st.sidebar.date_input("Start Date", value=pd.to_datetime("2015-01-01"))
 end_date = st.sidebar.date_input("End Date", value=pd.to_datetime("2023-01-01"))
